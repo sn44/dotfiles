@@ -1,4 +1,4 @@
 # README
 
-"init.d" is emacs init file.
+"init.el" is emacs init file.
 This file set in .emacs/.
