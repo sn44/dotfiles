@@ -19,6 +19,10 @@
   (set-file-name-coding-system 'utf-8-hfs)
   (setq locale-coding-system 'utf-8-hfs))
 
+;; dired
+(add-hook 'dired-load-hook (lambda ()(define-key dired-mode-map "r" 'wdired-change-to-wdired-mode)))
+(setq dired-dwim-target t)
+
 ;; リージョンないの行数と文字数をモードラインを表示する（範囲指定時のみ）
 (defun count-lines-and-chars ()
   (if mark-active
