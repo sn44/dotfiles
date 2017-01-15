@@ -147,3 +147,11 @@
 ;;smex
 (require 'smex)
 (global-set-key(kbd "M-x") 'smex)
+
+;; yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+(setq yas-prompt-functions '(yas-ido-prompt))
+(setq yas-snippet-dirs
+      '("~/.emacs.d/mysnippets"
+        "~/.emacs.d/yasnippets"))
